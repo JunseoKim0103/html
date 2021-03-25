@@ -1,0 +1,159 @@
+#굵게
+<strong>안녕하세요</strong>
+#밑줄
+<u>안녕하세요</u>
+#제목 테그
+<h1>안녕하세요</h1>
+<h2>안녕하세요</h2>
+<h3>안녕하세요</h3>
+<h4>안녕하세요</h4>
+<h5>안녕하세요</h5>
+<h6>안녕하세요</h6>
+
+#문단
+껑<br>충
+껑<p>충</p>
+
+
+#이미지 가져오기
+
+<img src = "https://commons.wikimedia.org/wiki/File:Lion_waiting_in_Namibia.jpg">
+#<img src = "이미지명. 확장자명">
+
+#list
+  <li>안녕하세요</li>
+  <li>성균관대</li>
+  <li>멋사입니다</li>
+
+#ul로 리스트 구별 가능
+<ul>
+  <li>안녕하세요</li>
+  <li>성균관대</li>
+  <li>멋사입니다</li>
+</ul>
+
+<ul>
+  <li>만나서</li>
+  <li>진심으로</li>
+  <li>반갑습니다!</li>
+</ul>
+
+#ol tag -> 1번부터 차례대로 부여
+
+<ol>
+  <li>만나서</li>
+  <<li>진심으로</li>
+  <li>반갑습니다!</li>
+</ol>
+
+
+#title TAG
+
+<head>
+  <title>웹페이지 제목</title>
+<head>
+<body>
+</body>
+
+# <a href="사이트주소" target = "_blank" title = "마우스 갖다대면 나오는 설명">아이캠퍼스</a>
+
+#css 를 사용하는 두가지 방법
+1. html style 태그 안에 css 문법 적용
+2. 특정 html 태그 안에 직접 속성 적용
+
+<html>
+<head>
+  <title>웹페이지 제목</title>
+  <style>
+    이 태그안에 있는 건 css -> css 문법에 맞게 처리하기!
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+#div 테그 내에 직접 속성적용
+<div style = "color:red">특정 태그 안에 적용</div>
+
+#선택자 우선순위 : id > class > TAG
+
+<head>
+  <style>
+    #thisisID{
+      color: red;
+    }
+    . thisisClass{
+      color: blue;
+    }
+    a{
+      color: black;
+    }
+  </style>
+<head>
+
+
+<body>
+  <a href="1.html">테스트1</a>
+  <a href="2.html" class = "thisisClass">테스트2</a>
+  <a href="2.html" class = "thisisClass" id = "thisisID">테스트3</a>
+</body>
+
+## Box model
+# 화면 전체를 차지하는 태그 = block level elements
+# 자기 자신의 부피만 차지하는 태그 = inline elements
+display: inline;
+# = block level에서 inline으로
+display:block;
+# = inline에서 block level로
+display: none;
+# = 안보이게
+
+#margin
+margin: 20px #상하좌우 20px
+margin: 20px 10px #상하 20px, 좌우 10px
+margin: 30px 20px 10px #상30px 좌우 20px 하10px
+margin: 40px 30px 20px 10px # 상 40px 우 30px 하 20px 좌 10px
+
+#border
+border - width: 5px;
+border - color: red;
+border - style: solid;
+
+border: 5px solid red;
+
+#grid
+#div = block level element
+#span = inline element
+
+<head>
+<style>
+  #grid{
+    display: grid;
+    grid - template - columns: 150px 1fr;
+  }
+
+</style>
+</head>
+
+<body>
+  <div id = "grid">
+    <div id = "left">
+    왼쪽 내용 blah blah
+    </div>
+    <div id = "right">
+      오른쪽 내용 blah blah
+    </div>
+  </div>
+</body>
+
+
+#back ground color
+
+<style>
+  h1{
+    background-color:green;
+  }
+</style>
+
+#폰트 교체
+#font-family:'Roboto', sans-serif;
