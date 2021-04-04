@@ -141,14 +141,14 @@ h1{
     text-align: center;
 }
 
-.icons{
+.icon{
     display: flex;
     width:1280px;
     height:302px;
     margin: auto;
 }
 
-.icons > li{
+.icon > li{
     flex: 1;
     background: white;
     margin-top: 49px;
@@ -156,15 +156,15 @@ h1{
     text-align: center;
 }
 
-.icons > li > .icon_img{
+.icon > li > .icon_img{
     margin-top: 18px;
 }
 
-.icons > li:not(:last-child){
+.icon > li:not(:last-child){
     margin-right: 20px;
 }
 
-.icons .contents2 {
+.icon .contents2 {
     width: 280px;
     margin: auto;
     letter-spacing: -1px;
